@@ -12,37 +12,41 @@
 		<form style = "padding-left:20%;padding-right: 20%; " action="/action_page.php">
 			<section >
 				<h2 >Personal Data:</h2>
-				<label>First name:</label><br>
+				First name:<br>
 				<input placeholder="Name" type="text" name="First Name" required autofocus>
 				<br><br>
-				<labe>Last name:</labe><br>
+				Last name:<br>
 				<input placeholder="LastName" type="text" name="Last Name" required>
 				<br><br>
-				<label>Sex:</label><br>
+				Sex:<br>
+				<label>
 				<input type="radio" name="gender" value="male" checked>Male<br>
-				<input type="radio" name="gender" value="female">Female<br>
+				</label>
+				<label><input type="radio" name="gender" value="female">Female<br>
+				</label>
+				<label>
 				<input type="radio" name="gender" value = "other">Other<br> 
-
-				<label>Birthday date:</label><br>
+				</label>
+				Birthday date:<br>
 				<input type="date" placeholder="Question" name="Date" required>
 				<br><br>
 				<label>Address:</label><br>
 				<input type="text" name="address">
 				<br><br>
-				<label>Country:</label><br>
-				<input list = "Countries" name="Country">
-				<datalist id = "Countries">
-					<option value = "Ukraine"></option>
-					<option value = "USA"></option>
-					<option value = "Canada"></option>
-					<option value = "Germany"></option>
-					<option value = "France"></option>
-				</datalist>
+				Country:
+				
+				<select name = "dropdown" id = "Countries">
+					<option value = "Ukraine" selected>Ukraine</option>
+					<option value = "USA">USA</option>
+					<option value = "Canada">Canada</option>
+					<option value = "Germany">Germany</option>
+					<option value = "France">France</option>
+				</select>
 				<br><br>
-				<label>Email address:</label><br>
+				Email address:<br>
 				<input type="email" name="Email">
 				<br><br>
-				<label>Mobile number:</label><br>
+				Mobile number:<br>
 				<input type=" text" name="Number" value = "+380">
 				<br><br>
 				<input type="button" value = "Save" onclick="alert('Saved!')">
@@ -52,9 +56,9 @@
 				<section>
 				<h2>Ordering:</h2>
 				<p>You need a password for a buying!</p>
-				<label>Password</label><br>
+				Password<br>
 				<input type="password" name="Password" required placeholder="*****"><br><br>
-				<label>Question for renewing your password:</label><br><br>
+				Question for renewing your password:<br><br>
 				<textarea>What is your dog's name?	</textarea><br><br>
 				<label>Choose a uniform:</label><br>
 				<input list = "Uniform" name="Uniform"><br><br>
@@ -63,25 +67,47 @@
 					<option value = "Jordan"></option>
 					<option value = "Bryant"></option>
 				</datalist>
-				<label>Shorts color:</label>	
+				Shorts color:	
 				<input type="color" value="#0000">
 				
 				<p>Choose the trademarks:</p>
+				<label>
 				<input type="checkbox" name="Mark">Adidas
+				</label>
+				<label>
 				<input type="checkbox" name="Mark">Nike
+				</label>
+				<label>
 				<input type="checkbox" name="Mark">Puma
+				</label>
+				<label>
 				<input type="checkbox" name="Mark">Kappa
+				</label>
+				<label>
 				<input type="checkbox" name="Mark">Umbro
+				</label>
 				<br>	 	
 				
-				<label>Size:</label><br>
+				Size:<br>
+				<label>
 				<input type="radio" name="size" value="m" checked>XS<br>
+				</label>
+				<label>
 				<input type="radio" name="size" value="s">S<br>
+				</label>
+				<label>
 				<input type="radio" name="size" value ="l">M<br> 
+				</label>
+				<label>
 				<input type="radio" name="size" value ="l">L<br> 
+				</label>
+				<label>
 				<input type="radio" name="size" value ="l">XL<br> 
+				</label>
+				<label>
 				<input type="radio" name="size" value ="l">XXL<br> 
-				<label>Amount:</label>
+				</label>
+				Amount:
 				<input type="number" name="amount" min = "1" max = "20" step = "1"><br><br>
 				<input type="submit" onclick="alert('Submitted!!!')">
 				<button type ="button" value = "button" onclick="alert('Try to call 911!!!' )">Contact us</button>
