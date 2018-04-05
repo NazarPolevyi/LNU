@@ -2,16 +2,19 @@
 <html>
 <head>
 	<title>The Uniforms store</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Hi+Melody|IBM+Plex+Mono" rel="stylesheet">
+
 </head>
-<body>
+<body class=bodyForms>
 	<header>
 		<img src="Images\logoJordan.png" height="35" width="42">
-		<h1 style="text-align: center;">Purchase form: </h1> 
+		<h1 class = purchase >Purchase form: </h1> 
 	</header>
 	<section>
-		<form style = "padding-left:20%;padding-right: 20%; " action="/action_page.php">
+		<form class = forms " action="/action_page.php">
 			<section >
-				<h2 >Personal Data:</h2>
+				<h2  class = purData>Personal Data:</h2>
 				First name:<br>
 				<input placeholder="Name" type="text" name="First Name" required autofocus>
 				<br><br>
@@ -54,7 +57,7 @@
 				<br><br>
 			</section>
 				<section>
-				<h2>Ordering:</h2>
+				<h2 class = purData>Ordering:</h2>
 				<p>You need a password for a buying!</p>
 				Password<br>
 				<input type="password" name="Password" required placeholder="*****"><br><br>
